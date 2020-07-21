@@ -122,4 +122,15 @@ exports.displayAll = (req, res) => {
     });
 };
 
-exports.cashFlow = (req, res) => {};
+exports.cashFlow = (req, res) => {
+  Transaction.find({})
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message:
+          err.message || "some error occurred while displaying cash flow",
+      });
+    });
+};

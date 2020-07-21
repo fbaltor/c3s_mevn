@@ -22,7 +22,7 @@ module.exports = (app) => {
   router.get("/", transactions.displayAll);
 
   // Display cash flow
-  router.get("/", transactions.cashFlow);
+  router.get("/cashflow", transactions.cashFlow);
 
   app.use("/api/transactions", router);
 };

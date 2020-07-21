@@ -7,7 +7,7 @@ const app = express();
 
 // Setup the cors configuration and enabling it as middleware
 var corsOptions = {
-  origin: "http://localhost:8081",
+  origin: "http://localhost:3001", // allow connections from this host (frontend server)
 };
 
 app.use(cors(corsOptions));
