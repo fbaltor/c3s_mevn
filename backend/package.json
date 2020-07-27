@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./server.js",
-    "dev": "nodemon --inspect ./server.js"
+    "dev": "nodemon --inspect ./server.js",
+    "lint": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",
     "nodemon": "^2.0.4"
   }
